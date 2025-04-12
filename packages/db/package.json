@@ -1,0 +1,19 @@
+{
+  "name": "@app/db",
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "private": true,
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:push": "prisma generate && prisma db push",
+    "db:seed": "prisma generate && tsx prisma/seed.ts"
+  },
+  "packageManager": "yarn@4.5.0",
+  "dependencies": {
+    "@prisma/client": "latest"
+  },
+  "devDependencies": {
+    "prisma": "latest",
+    "tsx": "^4.7.0"
+  }
+}
